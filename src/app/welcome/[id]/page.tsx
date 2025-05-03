@@ -9,16 +9,23 @@ export default function Welcome() {
             <div className={styles.imgContainer}>
             <Image
                 src={Cat}
-                width={500}
-                height={400}
+                width={400}
+                height={300}
                 alt={"cute cat"}
-                className={styles.image}
+                className={styles.imageMobile}
+            />
+            <Image
+                src={Cat}
+                width={400}
+                height={300}
+                alt={"cute cat"}
+                className={styles.imageDesktop}
             />
             </div>
             <div className={styles.details}>
-            <h1>Your next delivery for Dorian and Ocie</h1>
-            <h2>{`Hey Kayleigh! In two days' time, we'll be charging you for your next order for Dorian and Ocie's fresh food.`}</h2>
-            <p>Total price: £134.00</p>
+            <h1 className={styles.title}>Your next delivery for Dorian and Ocie</h1>
+            <h2 className={styles.subtitle}>{`Hey Kayleigh! In two days' time, we'll be charging you for your next order for Dorian and Ocie's fresh food.`}</h2>
+            <p className={styles.price}>Total price: £134.00</p>
             <div className={styles.actions}>
             <a className={styles.button1}>See Details</a>
             <a className={styles.button2}>Edit Delivery</a>
